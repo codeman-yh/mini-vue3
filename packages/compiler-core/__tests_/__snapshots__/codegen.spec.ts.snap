@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`codegen element 1`] = `
+"const { toDisplayString : _toDisplayString,createElementBlock : _createElementBlock } = Vue 
+return function render(_ctx){return _createElementBlock('div', null, 'hi，' + _toDisplayString(_ctx.message))}"
+`;
+
+exports[`codegen interploation 1`] = `
+"const { toDisplayString : _toDisplayString } = Vue 
+return function render(_ctx){return _toDisplayString(_ctx.message)}"
+`;
+
+exports[`codegen text 1`] = `
+"
+return function render(_ctx){return 'hello'}"
+`;
